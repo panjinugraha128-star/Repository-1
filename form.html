@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+    <form action="http://rplcoders.com/proses.php" method="POST">
+        <fieldset> 
+         <label for="nama">Nama lengkap:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="password" id="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for=""tanggal">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal" name="tanggal" required><br><br>
+        <label for="Jenis Kelamin">Jenis Kelamin:</label><br>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+        <label for="laki-laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+        <label for="perempuan">Perempuan</label><br><br>
+        <br><br>
+        <label for="kelas">Kelas:</label><br>
+        <select id="Kelas" name="Kelas" required>
+            <option value="">Pilih Kelas</option>
+            <option value="RPL">RPL</option>
+            <option value="DKV">DKV</option>
+            <option value="DPIB">DPIB</option>
+            <option value="ULW">ULW</option> 
+        </select>
+        <br><br>
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="30"></textarea><br><br>
+        <br><br>
+        <label for="ekskul">Pilihan Ekstrakurikuler (bisa lebih dari satu):<br>
+        <input type="checkbox" id="futsal" name="ekskul[]" value="futsal">futsal<br>
+        <input type="checkbox" id="basket" name="ekskul[]" value="basket">basket<br>
+        <input type="checkbox" id="voli" name="ekskul[]" value="voli">voli<br>
+        <input type="checkbox" id="Drum Band" name="ekskul[]" value="Drum Band">Drum Band<br>
+        <input type="checkbox" id="pramuka" name="ekskul[]" value="pramuka">pramuka<br>
+        <input type="checkbox" id="Musik" name="ekskul[]" value="Musik">Musik<br>
+        <br><br>
+         <input type="submit" value="Kirim"> 
+        <input type="reset" value="Reset">
+    </form> 
+</body>  
+</fieldset>

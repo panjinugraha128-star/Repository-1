@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>Pendaftaran OSIS</h1>
+    </header>
+    <form action="http://rplcoders.com/proses.php" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text"
+                   id="nama"
+                   name="nama"
+                   placeholder="Masukkan nama lengkap"
+                   required>
+            <br><br>
+
+            <label for="no_hp">No HP:</label>
+            <input type="tel"
+                   id="no_hp"
+                   name="no_hp"
+                   placeholder="08xxxxxxxxxx"
+                   pattern="[0-9]{10,13}"
+                   required>
+            <br><br>
+
+            <label for="tanggal">Tanggal Lahir:</label>
+            <input type="date"
+                   id="tanggal"
+                   name="tanggal"
+                   required>
+            <br><br>
+
+            <p>Jenis Kelamin:</p>
+
+            <input type="radio"
+                   id="laki_laki"
+                   name="jenis_kelamin"
+                   value="Laki-laki"
+                   required>
+            <label for="laki_laki">Laki-laki</label>
+
+            <input type="radio"
+                   id="perempuan"
+                   name="jenis_kelamin"
+                   value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+
+            <br><br>
+
+            <label for="kelas">Kelas:</label>
+            <select id="kelas" name="kelas" required>
+                <option value="">-- Pilih Kelas --</option>
+                <option value="10">Kelas 10</option>
+                <option value="11">Kelas 11</option>
+                <option value="12">Kelas 12</option>
+            </select>
+
+            <br><br>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="RPL">RPL</option>
+                <option value="DPIB">DPIB</option>
+                <option value="DKV">DKV</option>
+                <option value="ULW">ULW</option>
+                <option value="TKJ">TKJ</option>
+                <option value="ANIMASI">ANIMASI</option>
+                <option value="PSPT">PSPT</option>
+                <option value="TKKR">TKKR</option>
+                <option value="DPB">DPB</option>
+                <option value="KKBT">KKBT</option>
+                <option value="KKKR">KKKR</option>
+                <option value="KKKI">KKKI</option>
+            </select>
+
+            <br><br>
+
+            <p>Pilihan Jabatan:</p>
+
+            <input type="checkbox"
+                   id="keamanan"
+                   name="jabatan[]"
+                   value="keamanan">
+            <label for="keamanan">Keamanan</label>
+            <br>
+
+            <input type="checkbox"
+                   id="ketakwaan"
+                   name="jabatan[]"
+                   value="ketakwaan">
+            <label for="ketakwaan">Ketakwaan</label>
+            <br>
+
+            <input type="checkbox"
+                   id="kerohanian"
+                   name="jabatan[]"
+                   value="kerohanian">
+            <label for="kerohanian">Kerohanian</label>
+            <br>
+
+            <input type="checkbox"
+                   id="ketua"
+                   name="jabatan[]"
+                   value="ketua">
+            <label for="ketua">Ketua</label>
+            <br>
+
+            <input type="checkbox"
+                   id="perlengkapan"
+                   name="jabatan[]"
+                   value="perlengkapan">
+            <label for="perlengkapan">Perlengkapan</label>
+            <br>
+
+            <input type="checkbox"
+                   id="sekretaris"
+                   name="jabatan[]"
+                   value="sekretaris">
+            <label for="sekretaris">Sekretaris</label>
+
+            <br><br>
+
+            <label for="kota">Kota:</label>
+            <input type="text"
+                   id="kota"
+                   name="kota"
+                   list="daftar_kota"
+                   placeholder="Pilih atau ketik kota">
+
+            <datalist id="daftar_kota">
+                <option value="Pacitan"></option>
+                <option value="Ponorogo"></option>
+                <option value="Madiun"></option>
+                <option value="Surabaya"></option>
+                <option value="Malang"></option>
+            </datalist>
+
+            <br><br>
+
+            <label for="alamat">Alamat:</label>
+            <br>
+            <textarea id="alamat"
+                      name="alamat"
+                      rows="4"
+                      cols="40"
+                      placeholder="Masukkan alamat lengkap"></textarea>
+
+            <br><br>
+
+            <label for="foto">Upload Foto:</label>
+            <input type="file"
+                   id="foto"
+                   name="foto"
+                   accept="image/*">
+
+            <br><br>
+ 
+            <button type="submit">Kirim</button>
+        </fieldset>
+    </form>
+</body>
+</html>
